@@ -4,10 +4,10 @@
 This Graph Mamba model is designed for pileup subtraction. It processes the constituent particle information from the Zj process (Z > νν).
 
 ## Model Input
-The input file contains data on constituent particles, and the average pileup number per bunch crossing is set to 60. Consequently, each event features approximately 1500-4000 particles.
+The input file contains data on constituent particles for each Zj(Z > v v) event, and the average pileup number per bunch crossing is set to 60. Consequently, each event features approximately 1500-4000 particles.
 
 ## Model Objective
-The primary aim of the Graph Mamba model is to determine the hard energy fraction $\hat{y} = \frac{E_{LV}}{E_{LV} + E_{PU}}$ of each Energy Flow object (EFlowPhoton, EFlowNeutralHadron, and EFlowChargedHadron) through a regression task.
+The primary aim of the Graph Mamba model is to determine the hard energy fraction $\hat{y} = \frac{E_{LV}}{E_{LV} + E_{PU}}$ of each Energy Flow object (EFlowPhoton, EFlowNeutralHadron, and EFlowChargedHadron) through a regression task. After that, each EFlow Object's energy can be rescaled and then passed to Delphes for jet clustering and object reconstruction. In this way, we can achieve the pileup subtraction with GraphMamba model.
 
 ## Dataset Samples
 A small sample containing 10 events is available for both the training and validation datasets.
