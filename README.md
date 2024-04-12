@@ -10,7 +10,7 @@ The input file contains data on constituent particles for each Zj(Z > v v) event
 The primary aim of the Graph Mamba model is to determine the hard energy fraction $\hat{y} = \frac{E_{LV}}{E_{LV} + E_{PU}}$ of each Energy Flow object (EFlowPhoton, EFlowNeutralHadron, and EFlowChargedHadron) through a regression task. After that, each EFlow Object's energy can be rescaled and then passed to Delphes for jet clustering and object reconstruction. In this way, we can achieve the pileup subtraction with GraphMamba model.
 
 ## Dataset Samples
-A small sample containing 10 events is available for both the training and validation datasets.
+A small sample containing 10 events and a medium sample containing 100 events are available for both the training and validation datasets.
 
 ## Additional Resources
 Check the input details and Mamba model settings in the `pileup_subtraction_note.pdf`.
